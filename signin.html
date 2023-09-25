@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Include your stylesheet here -->
+        <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp9Z3UWpnJoXQFJBO-z0UKkRf3Y2jK4iKvSR0c05cKt5z3tHdCXx1hERLpzx_u9aWP_k8&usqp=CAU" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                </img>
+                <span class="ml-3 text-xl">Ministry of Law and Defence</span>
+            </a>
+        </div>
+    </header>
+
+    <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto flex flex-wrap items-center">
+            <div class="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
+                <h1 class="title-font font-medium text-3xl text-gray-900">MINISTRY OF LAW AND DEFENCE</h1>
+                <p class="leading-relaxed mt-4">Sign in to access the website.</p>
+            </div>
+            <div class="lg:w-2/6 md:w-1/2 bg-gray-100 rounded-lg p-8 flex flex-col md:ml-auto w-full mt-10 md:mt-0">
+                <h2 class="text-gray-900 text-lg font-medium title-font mb-5">Sign In</h2>
+                <div class="relative mb-4">
+                    <label for="username" class="leading-7 text-sm text-gray-600">Username</label>
+                    <input type="text" id="username" name="username" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
+                </div>
+                <div class="relative mb-4">
+                    <label for="password" class="leading-7 text-sm text-gray-600">Password</label>
+                    <input type="password" id="password" name="password" class="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" required>
+                </div>
+                <button id="signin-button" class="text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Sign In</button>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const usernameInput = document.getElementById('username');
+            const passwordInput = document.getElementById('password');
+            const signinButton = document.getElementById('signin-button');
+
+            // Function to check if username and password are valid
+            function isUserValid(username, password) {
+                // Define the valid username-password pairs
+                const validUsers = {
+                    'prince': 'Hackathon@123',
+                    'ramkumar': 'Hackathon@123',
+                    'adityameena': 'Hackathon@123',
+                    'piyushprora': 'Hackathon@123'
+                };
+
+                return validUsers[username] === password;
+            }
+
+            // Function to handle sign-in button click
+            function handleSignIn() {
+                const username = usernameInput.value.toLowerCase(); // Convert to lowercase for case-insensitive matching
+                const password = passwordInput.value;
+
+                if (isUserValid(username, password)) {
+                    // Redirect to category.html
+                    window.location.href = 'category.html';
+                } else {
+                    // Display an error message or take other actions for invalid login
+                    alert('Invalid username or password. Please try again.');
+                }
+            }
+
+            // Add click event listener to the sign-in button
+            signinButton.addEventListener('click', handleSignIn);
+        });
+    </script>
+</body>
+</html>

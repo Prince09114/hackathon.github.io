@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        
+        <link rel="stylesheet" type="text/css" href="styles.css">
+            
+            <script src="https://cdn.tailwindcss.com"></script>
+            
+            
+    </head>
+    <body>
+        
+        <header class="header">
+            <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+                <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp9Z3UWpnJoXQFJBO-z0UKkRf3Y2jK4iKvSR0c05cKt5z3tHdCXx1hERLpzx_u9aWP_k8&usqp=CAU" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full" viewBox="0 0 24 24">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                        </svg>
+                        <span class="ml-3 text-xl">Ministry of Law and Defence</span>
+                </a>
+                <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400    flex flex-wrap items-center text-base justify-center">
+                    <a href="category.html" class="mr-5 hover:text-gray-900">Home</a>
+                    <a href="about.html" class="mr-5 hover:text-gray-900">About</a>
+                    <a href="contact.html" class="mr-5 hover:text-gray-900">Contact</a>
+                </nav>
+                
+                <button><a href="choosecategory.html" class="inline-flex items-center bg-black border-0 py-1 px-3 focus:outline-none hover:bg-blue-500 rounded text-base ml-2">
+                    Add New Case
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
+                        <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                </a>
+            </div>
+        </header>
+        <style>
+            background-image:url('file:///Users/prince/Downloads/still-life-with-scales-justice.jpg');
+        </style>
+        <style>
+            /* Add this CSS to style the signup button */
+            .signup-button {
+                float: right;
+                margin: 10px 20px;
+                background-image:url('file:///Users/prince/Downloads/still-life-with-scales-justice.jpg');
+            }
+            
+            .signup-button a {
+                background-color: #00bcd4;
+                color: #fff;
+                padding: 10px 20px;
+                text-decoration: none;
+                border-radius: 5px;
+                font-weight: bold;
+            }
+            
+            .signup-button a:hover {
+                background-color: #007c89; /* Change the background color on hover */
+            }
+            
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            
+            /* Style the navigation bar */
+            nav {
+                background-color: #333;
+            }
+            
+            .navbar {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 10px 20px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+            .header {
+                background-color: gray; /* Set the background color to gray */
+                color: white; /* Set the text color to white */
+                font-family: Arial, sans-serif;
+                .btn a {
+                    color: black;
+                }
+            }
+            
+            ul {
+                list-style-type: none;
+            }
+            
+            ul li {
+                display: inline;
+                margin-right: 20px;
+            }
+            
+            ul li a {
+                text-decoration: none;
+                color: #fff;
+                font-weight: bold;
+            }
+            
+            ul li a:hover {
+                color: #00bcd4; /* Change the color on hover */
+            }
+            /* Style for the boxes */
+            .box {
+                width: 200px;
+                height: 100px; /* Adjust the height to your preference */
+                margin: 10px;
+                background-color: #f3f3f3; /* Light grey background */
+                border: 2px solid #000; /* Black border */
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+            
+            /* Style for the text inside the boxes */
+            .box h2 {
+                color: #000; /* Dark black text */
+                font-size: 20px;
+            }
+            
+            /* Style for the buttons */
+            .button {
+                display: block;
+                width: 100%;
+                padding: 10px 0;
+                background-color: #00bcd4; /* Background color for buttons */
+                color: #fff; /* Text color for buttons */
+                text-align: center;
+                text-decoration: none;
+                border-radius: 5px;
+                font-weight: bold;
+            }
+            
+            .button:hover {
+                background-color: #007c89; /* Change the background color on hover */
+            }
+              .box-container {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+                gap: 10px; /* Adjust the gap between boxes */
+              }
+
+              .box {
+                flex: 1;
+                max-width: calc(25% - 10px); /* Adjust the width as needed */
+                padding: 20px;
+                border: 2px solid #ccc;
+                border-width: 2px;
+                transition: border-width 0.3s ease;
+              }
+
+              .box:hover {
+                border-width: 8px; /* Adjust the thickness on hover */
+              }
+            </style>
+
+            <section class="text-gray-600 body-font">
+              <div class="container px-5 py-24 mx-auto">
+                <div class="flex flex-col text-center w-full mb-20">
+                  <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">Choose the category of your case</h1>
+                </div>
+                <div class="box-container">
+                  <!-- Civil Case -->
+                  <div class="box">
+                    <a href="addcivil.html" class="button-red">
+                      <h2 class="title-font font-medium text-3xl text-gray-900">Civil Case</h2>
+                    </a>
+                  </div>
+                  <!-- Criminal Case -->
+                  <div class="box">
+                    <a href="addcriminal.html" class="button-blue">
+                      <h2 class="title-font font-medium text-3xl text-gray-900">Criminal Case</h2>
+                    </a>
+                  </div>
+                  <!-- Family Case -->
+                  <div class="box">
+                    <a href="addfamily.html" class="button-grey">
+                      <h2 class="title-font font-medium text-3xl text-gray-900">Family Case</h2>
+                    </a>
+                  </div>
+                  <!-- Probate and Estate Case -->
+                  <div class="box">
+                    <a href="addprobate.html" class="button-blue">
+                      <h2 class="title-font font-medium text-3xl text-gray-900">Probate/Estate Case</h2>
+                    </a>
+                  </div>
+                  <!-- Juvenile Case -->
+                  <div class="box">
+                    <a href="addjuvenile.html" class="button-red">
+                      <h2 class="title-font font-medium text-3xl text-gray-900">Juvenile Case</h2>
+                    </a>
+                  </div>
+                  <!-- Administrative Case -->
+                  <div class="box">
+                    <a href="addadministrative.html" class="button-grey">
+                      <h2 class="title-font font-medium text-3xl text-gray-900">Administrative Case</h2>
+                    </a>
+                  </div>
+                  <!-- Miscellaneous Case -->
+                  <div class="box">
+                    <a href="addmiscellaneous.html" class="button-grey">
+                      <h2 class="title-font font-medium text-3xl text-gray-900">Miscellaneous Case</h2>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+
+    </body>
+    </html>
+

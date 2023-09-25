@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="styles.css">
+        
+        <script src="https://cdn.tailwindcss.com"></script>
+        
+
+</head>
+<body>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <style>
+        .container {
+                    background-color: #f2f2f2;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                .case {
+                    display: flex;
+                    justify-content: space-between;
+                    background-color: #fff;
+                    margin: 10px;
+                    padding: 20px;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                }
+
+                .case h2 {
+                    background-color: #007bff;
+                    color: #fff;
+                    padding: 10px;
+                    border-radius: 10px 10px 0 0;
+                    margin: -20px -20px 20px -20px;
+                }
+
+                .columns {
+                    display: flex;
+                    flex-direction: column;
+                    flex: 1;
+                    padding: 10px;
+                }
+
+                h1 {
+                    text-align: center;
+                    color: #333;
+                }
+        .custom-button {
+                    display: inline-block;
+                    padding: 10px 20px;
+                    background-color: #333; /* Dark color */
+                    color: #fff; /* White text */
+                    border: none;
+                    border-radius: 5px;
+                    transition: background-color 0.3s, color 0.3s; /* Smooth hover transition */
+                }
+
+                /* Style for the button on hover */
+                .custom-button:hover {
+                    background-color: #fff; /* White background */
+                    color: #000; /* Black text */
+                    cursor: pointer;
+                }
+        .signup-button {
+            float: right;
+            margin: 10px 20px;
+            background-image:url('file:///Users/prince/Downloads/still-life-with-scales-justice.jpg');
+        }
+
+        .signup-button a {
+            background-color: #00bcd4;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .signup-button a:hover {
+            background-color: #007c89; /* Change the background color on hover */
+        }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Style the navigation bar */
+    nav {
+        background-color: #333;
+    }
+
+    .navbar {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header {
+        background-color: gray; /* Set the background color to gray */
+        color: white; /* Set the text color to white */
+        font-family: Arial, sans-serif;
+        .btn a {
+              color: black;
+          }
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    ul li a:hover {
+        color: #00bcd4; /* Change the color on hover */
+    }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .case {
+            background-color: #fff;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .case h2 {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border-radius: 10px 10px 0 0;
+            margin: -20px -20px 20px -20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        body {
+                    font-family: Arial, sans-serif;
+                    background-color: #f2f2f2;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                .container {
+                    max-width: 100%;
+                    margin: 0 auto;
+                    padding: 20px;
+                }
+
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    background-color: #fff;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                }
+
+                th, td {
+                    padding: 12px 15px;
+                    text-align: left;
+                }
+
+                th {
+                    background-color: #007bff;
+                    color: #fff;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                }
+
+                tr:nth-child(even) {
+                    background-color: #f2f2f2;
+                }
+
+                tr:hover {
+                    background-color: #ddd;
+                }
+
+                th, td {
+                    border-bottom: 1px solid #ddd;
+                }
+
+                th:last-child, td:last-child {
+                    border-bottom: none;
+                }body {
+                    font-family: Arial, sans-serif;
+                    background-color: #f2f2f2;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                .container {
+                    max-width: 100%;
+                    margin: 0 auto;
+                    padding: 20px;
+                }
+
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    background-color: #fff;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                }
+
+                th, td {
+                    padding: 12px 15px;
+                    text-align: left;
+                }
+
+                th {
+                    background-color: #007bff;
+                    color: #fff;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                }
+
+                tr:nth-child(even) {
+                    background-color: #f2f2f2;
+                }
+
+                tr:hover {
+                    background-color: #ddd;
+                }
+
+                th, td {
+                    border-bottom: 1px solid #ddd;
+                }
+
+                th:last-child, td:last-child {
+                    border-bottom: none;
+                }
+    </style>
+    
+</head>
+<body>
+    <header class="header">
+            <button> <a href="category.html" class="custom-button">Back</a></button>
+        </header>
+    <div class="container">
+        <h1>List of Recent Civil Cases</h1>
+
+        <div class="container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Case Name</th>
+                            <th>Date of Hearing</th>
+                            <th>Result</th>
+                            <th>Sentence</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                                        <td>Case 1: Smith Corp. Tax Audit</td>
+                                        <td>2023-01-10</td>
+                                        <td>Tax Evasion</td>
+                                        <td>Penalty and back taxes owed.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Case 2: Johnson Engineering License</td>
+                                        <td>2023-02-20</td>
+                                        <td>Licensing Violation</td>
+                                        <td>License suspension and fine.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Case 3: Brown Environmental Compliance</td>
+                                        <td>2023-03-05</td>
+                                        <td>Environmental Violation</td>
+                                        <td>Fine and remediation plan.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Case 4: Wilson Zoning Dispute</td>
+                                        <td>2023-04-15</td>
+                                        <td>Zoning Violation</td>
+                                        <td>Zoning variance denied.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Case 5: Patel Business Permit</td>
+                                        <td>2023-05-03</td>
+                                        <td>Permit Revocation</td>
+                                        <td>Permit revoked for non-compliance.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Case 6: Anderson Food Safety Inspection</td>
+                                        <td>2023-06-22</td>
+                                        <td>Health Violation</td>
+                                        <td>Temporary closure and corrective actions.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Case 7: Turner Land Use Change</td>
+                                        <td>2023-07-11</td>
+                                        <td>Land Use Violation</td>
+                                        <td>Land use change denied.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Case 8: Miller Building Code Compliance</td>
+                                        <td>2023-08-28</td>
+                                        <td>Code Violation</td>
+                                        <td>Fine and mandatory compliance.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Case 9: Smith Business Licensing</td>
+                                        <td>2023-09-17</td>
+                                        <td>Licensing Revocation</td>
+                                        <td>Licensing revoked due to violations.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Case 10: Adams Environmental Permit</td>
+                                        <td>2023-10-05</td>
+                                        <td>Permit Denied</td>
+                                        <td>Environmental permit denied.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Case 11: Scott Employment Dispute</td>
+                                        <td>2023-11-12</td>
+                                        <td>Labor Law Violation</td>
+                                        <td>Compensation awarded to the employee.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Case 12: Baker Import License</td>
+                                        <td>2023-12-20</td>
+                                        <td>Licensing Issue</td>
+                                        <td>License granted with conditions.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Case 13: Harris Product Recall</td>
+                                        <td>2024-01-07</td>
+                                        <td>Product Safety</td>
+                                        <td>Product recall ordered.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Case 14: Lee Utility Rate Adjustment</td>
+                                        <td>2024-02-14</td>
+                                        <td>Rate Adjustment</td>
+                                        <td>Rate adjustment approved with modifications.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Case 15: White Import Tariffs</td>
+                                        <td>2024-03-18</td>
+                                        <td>Trade Policy</td>
+                                        <td>Import tariffs implemented.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Case 16: Robinson Consumer Complaint</td>
+                                        <td>2024-04-02</td>
+                                        <td>Consumer Protection</td>
+                                        <td>Consumer compensated for damages.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Case 17: Turner Contract Dispute</td>
+                                        <td>2024-05-09</td>
+                                        <td>Contract Violation</td>
+                                        <td>Contract penalties imposed.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Case 18: Clark Public Records Request</td>
+                                        <td>2024-06-20</td>
+                                        <td>Transparency Issue</td>
+                                        <td>Public records provided with redactions.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Case 19: Johnson Real Estate Permit</td>
+                                        <td>2024-07-03</td>
+                                        <td>Permit Approval</td>
+                                        <td>Real estate permit granted.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Case 20: Garcia Construction License</td>
+                                        <td>2024-08-14</td>
+                                        <td>Licensing Issue</td>
+                                        <td>Licensing granted with conditions.</td>
+                                    </tr>
+                    </tbody>
+                </table>
+            </div>
+
+</body>
+</html>

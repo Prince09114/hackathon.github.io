@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="styles.css">
+        
+        <script src="https://cdn.tailwindcss.com"></script>
+        
+
+</head>
+<body>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <style>
+        .container {
+                    background-color: #f2f2f2;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                .case {
+                    display: flex;
+                    justify-content: space-between;
+                    background-color: #fff;
+                    margin: 10px;
+                    padding: 20px;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                }
+
+                .case h2 {
+                    background-color: #007bff;
+                    color: #fff;
+                    padding: 10px;
+                    border-radius: 10px 10px 0 0;
+                    margin: -20px -20px 20px -20px;
+                }
+
+                .columns {
+                    display: flex;
+                    flex-direction: column;
+                    flex: 1;
+                    padding: 10px;
+                }
+
+                h1 {
+                    text-align: center;
+                    color: #333;
+                }
+        .custom-button {
+                    display: inline-block;
+                    padding: 10px 20px;
+                    background-color: #333; /* Dark color */
+                    color: #fff; /* White text */
+                    border: none;
+                    border-radius: 5px;
+                    transition: background-color 0.3s, color 0.3s; /* Smooth hover transition */
+                }
+
+                /* Style for the button on hover */
+                .custom-button:hover {
+                    background-color: #fff; /* White background */
+                    color: #000; /* Black text */
+                    cursor: pointer;
+                }
+        .signup-button {
+            float: right;
+            margin: 10px 20px;
+            background-image:url('file:///Users/prince/Downloads/still-life-with-scales-justice.jpg');
+        }
+
+        .signup-button a {
+            background-color: #00bcd4;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .signup-button a:hover {
+            background-color: #007c89; /* Change the background color on hover */
+        }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Style the navigation bar */
+    nav {
+        background-color: #333;
+    }
+
+    .navbar {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header {
+        background-color: gray; /* Set the background color to gray */
+        color: white; /* Set the text color to white */
+        font-family: Arial, sans-serif;
+        .btn a {
+              color: black;
+          }
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    ul li a:hover {
+        color: #00bcd4; /* Change the color on hover */
+    }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .case {
+            background-color: #fff;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .case h2 {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border-radius: 10px 10px 0 0;
+            margin: -20px -20px 20px -20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        body {
+                    font-family: Arial, sans-serif;
+                    background-color: #f2f2f2;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                .container {
+                    max-width: 100%;
+                    margin: 0 auto;
+                    padding: 20px;
+                }
+
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    background-color: #fff;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                }
+
+                th, td {
+                    padding: 12px 15px;
+                    text-align: left;
+                }
+
+                th {
+                    background-color: #007bff;
+                    color: #fff;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                }
+
+                tr:nth-child(even) {
+                    background-color: #f2f2f2;
+                }
+
+                tr:hover {
+                    background-color: #ddd;
+                }
+
+                th, td {
+                    border-bottom: 1px solid #ddd;
+                }
+
+                th:last-child, td:last-child {
+                    border-bottom: none;
+                }body {
+                    font-family: Arial, sans-serif;
+                    background-color: #f2f2f2;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                .container {
+                    max-width: 100%;
+                    margin: 0 auto;
+                    padding: 20px;
+                }
+
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    background-color: #fff;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                }
+
+                th, td {
+                    padding: 12px 15px;
+                    text-align: left;
+                }
+
+                th {
+                    background-color: #007bff;
+                    color: #fff;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                }
+
+                tr:nth-child(even) {
+                    background-color: #f2f2f2;
+                }
+
+                tr:hover {
+                    background-color: #ddd;
+                }
+
+                th, td {
+                    border-bottom: 1px solid #ddd;
+                }
+
+                th:last-child, td:last-child {
+                    border-bottom: none;
+                }
+    </style>
+    
+</head>
+<body>
+    <header class="header">
+            <button> <a href="category.html" class="custom-button">Back</a></button>
+        </header>
+    <div class="container">
+        <h1>List of Recent Civil Cases</h1>
+
+        <div class="container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Case Name</th>
+                            <th>Date of Hearing</th>
+                            <th>Result</th>
+                            <th>Decision</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Case 1: Estate of John Smith</td>
+                            <td>2023-09-10</td>
+                            <td>John Smith's children inherit the property</td>
+                            <td>Property distributed among heirs as per the will.</td>
+                        </tr>
+                        <tr>
+                            <td>Case 2: Will of Mary Johnson</td>
+                            <td>2023-08-05</td>
+                            <td>Mary Johnson's estate goes to her nominated charity</td>
+                            <td>Assets transferred to the designated charitable organization.</td>
+                        </tr>
+                        <tr>
+                            <td>Case 3: Estate of Robert Turner</td>
+                            <td>2023-07-20</td>
+                            <td>Property transferred to Robert Turner's surviving spouse</td>
+                            <td>Spouse gains ownership of the estate in accordance with the will.</td>
+                        </tr>
+                        <tr>
+                            <td>Case 4: Inheritance of Alice Wilson</td>
+                            <td>2023-06-15</td>
+                            <td>Alice Wilson's siblings share the inherited assets</td>
+                            <td>Assets divided equally among Alice's surviving siblings.</td>
+                        </tr>
+                        <tr>
+                            <td>Case 5: Estate of David Adams</td>
+                            <td>2023-05-02</td>
+                            <td>David Adams' longtime friend inherits his estate</td>
+                            <td>Estate assets transferred to the friend named in the will.</td>
+                        </tr>
+                        <tr>
+                            <td>Case 6: Will of Laura Brown</td>
+                            <td>2023-04-18</td>
+                            <td>Laura Brown's estate is contested among distant relatives</td>
+                            <td>Legal battles among distant relatives to determine the rightful beneficiaries.</td>
+                        </tr>
+                        <tr>
+                            <td>Case 7: Estate of Sarah Harris</td>
+                            <td>2023-03-27</td>
+                            <td>Probate litigation delays the distribution of Sarah Harris' assets</td>
+                            <td>Assets held in probate due to legal disputes, delaying distribution.</td>
+                        </tr>
+                        <tr>
+                            <td>Case 8: Inheritance of Michael Roberts</td>
+                            <td>2023-02-14</td>
+                            <td>Will is deemed valid; assets distributed to named beneficiaries</td>
+                            <td>Estate assets transferred to the individuals named in the will.</td>
+                        </tr>
+                        <tr>
+                            <td>Case 9: Estate of Elizabeth Lee</td>
+                            <td>2023-01-30</td>
+                            <td>Executor disputes resolved; estate distribution underway</td>
+                            <td>Executor disputes resolved, and estate assets are being distributed.</td>
+                        </tr>
+                        <tr>
+                            <td>Case 10: Will of Richard Green</td>
+                            <td>2023-01-05</td>
+                            <td>Will upheld; property transferred to nominated beneficiaries</td>
+                            <td>Estate assets transferred as per the terms of the will.</td>
+                        </tr>
+                        <tr>
+                            <td>Case 11: Estate of Susan Jackson</td>
+                            <td>2023-12-20</td>
+                            <td>Probate process initiated</td>
+                            <td>Probate process initiated to determine the rightful beneficiaries.</td>
+                        </tr>
+                        <tr>
+                            <td>Case 12: Will of James Anderson</td>
+                            <td>2023-11-15</td>
+                            <td>Will is contested; legal proceedings underway</td>
+                            <td>Legal proceedings initiated to resolve the contested will.</td>
+                        </tr>
+                        <tr>
+                            <td>Case 13: Estate of Linda Turner</td>
+                            <td>2023-10-10</td>
+                            <td>Executor appointment dispute settled</td>
+                            <td>Dispute over the appointment of the executor has been resolved.</td>
+                        </tr>
+                        <tr>
+                            <td>Case 14: Inheritance of William Davis</td>
+                            <td>2023-09-05</td>
+                            <td>Multiple beneficiaries; estate distribution in progress</td>
+                            <td>Estate distribution is ongoing among multiple beneficiaries.</td>
+                        </tr>
+                        <tr>
+                            <td>Case 15: Estate of Carol Robinson</td>
+                            <td>2023-08-15</td>
+                            <td>Probate court battles underway</td>
+                            <td>Legal battles in probate court to determine the rightful heirs.</td>
+                        </tr>
+                        <tr>
+                            <td>Case 16: Will of Peter Martinez</td>
+                            <td>2023-07-05</td>
+                            <td>Will interpretation disputes ongoing</td>
+                            <td>Disputes regarding the interpretation of the will are under review.</td>
+                        </tr>
+                        <tr>
+                            <td>Case 17: Estate of Jessica White</td>
+                            <td>2023-06-10</td>
+                            <td>Executor challenges resolved</td>
+                            <td>Challenges regarding the executor have been resolved.</td>
+                        </tr>
+                        <tr>
+                            <td>Case 18: Inheritance of Daniel Patel</td>
+                            <td>2023-05-20</td>
+                            <td>Multiple beneficiaries; estate distribution underway</td>
+                            <td>Estate distribution is ongoing among multiple beneficiaries.</td>
+                        </tr>
+                        <tr>
+                            <td>Case 19: Estate of Amanda Miller</td>
+                            <td>2023-04-15</td>
+                            <td>Will validity confirmed; assets to be distributed</td>
+                            <td>The will's validity is confirmed, and assets will be distributed accordingly.</td>
+                        </tr>
+                        <tr>
+                            <td>Case 20: Will of Benjamin Garcia</td>
+                            <td>2023-03-02</td>
+                            <td>Legal disputes over inheritance rights</td>
+                            <td>Legal disputes ongoing to determine the rightful beneficiaries.</td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+                <a href="addcivil.html" class="custom-button">Add New Case</a>
+            </div>
+        <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        const caseTableBody = document.querySelector("tbody");
+
+                        // Function to handle row deletion
+                        function deleteRow(button) {
+                            const row = button.closest("tr");
+                            row.remove();
+                        }
+
+                        // Attach click event listeners to delete buttons
+                        const deleteButtons = document.querySelectorAll(".delete-button");
+                        deleteButtons.forEach(function(button) {
+                            button.addEventListener("click", function() {
+                                deleteRow(button);
+                            });
+                        });
+                    });
+                </script>
+
+</body>
+</html>

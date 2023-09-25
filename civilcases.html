@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" type="text/css" href="styles.css">
+        
+        <script src="https://cdn.tailwindcss.com"></script>
+        
+
+</head>
+<body>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <style>
+        .container {
+                    background-color: #f2f2f2;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                .case {
+                    display: flex;
+                    justify-content: space-between;
+                    background-color: #fff;
+                    margin: 10px;
+                    padding: 20px;
+                    border-radius: 10px;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                }
+
+                .case h2 {
+                    background-color: #007bff;
+                    color: #fff;
+                    padding: 10px;
+                    border-radius: 10px 10px 0 0;
+                    margin: -20px -20px 20px -20px;
+                }
+
+                .columns {
+                    display: flex;
+                    flex-direction: column;
+                    flex: 1;
+                    padding: 10px;
+                }
+
+                h1 {
+                    text-align: center;
+                    color: #333;
+                }
+        .custom-button {
+                    display: inline-block;
+                    padding: 10px 20px;
+                    background-color: #333; /* Dark color */
+                    color: #fff; /* White text */
+                    border: none;
+                    border-radius: 5px;
+                    transition: background-color 0.3s, color 0.3s; /* Smooth hover transition */
+                }
+
+                /* Style for the button on hover */
+                .custom-button:hover {
+                    background-color: #fff; /* White background */
+                    color: #000; /* Black text */
+                    cursor: pointer;
+                }
+        .signup-button {
+            float: right;
+            margin: 10px 20px;
+            background-image:url('file:///Users/prince/Downloads/still-life-with-scales-justice.jpg');
+        }
+
+        .signup-button a {
+            background-color: #00bcd4;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .signup-button a:hover {
+            background-color: #007c89; /* Change the background color on hover */
+        }
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Style the navigation bar */
+    nav {
+        background-color: #333;
+    }
+
+    .navbar {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 10px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header {
+        background-color: gray; /* Set the background color to gray */
+        color: white; /* Set the text color to white */
+        font-family: Arial, sans-serif;
+        .btn a {
+              color: black;
+          }
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    ul li {
+        display: inline;
+        margin-right: 20px;
+    }
+
+    ul li a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+    }
+
+    ul li a:hover {
+        color: #00bcd4; /* Change the color on hover */
+    }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .case {
+            background-color: #fff;
+            margin: 20px 0;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .case h2 {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border-radius: 10px 10px 0 0;
+            margin: -20px -20px 20px -20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        body {
+                    font-family: Arial, sans-serif;
+                    background-color: #f2f2f2;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                .container {
+                    max-width: 100%;
+                    margin: 0 auto;
+                    padding: 20px;
+                }
+
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    background-color: #fff;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                }
+
+                th, td {
+                    padding: 12px 15px;
+                    text-align: left;
+                }
+
+                th {
+                    background-color: #007bff;
+                    color: #fff;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                }
+
+                tr:nth-child(even) {
+                    background-color: #f2f2f2;
+                }
+
+                tr:hover {
+                    background-color: #ddd;
+                }
+
+                th, td {
+                    border-bottom: 1px solid #ddd;
+                }
+
+                th:last-child, td:last-child {
+                    border-bottom: none;
+                }body {
+                    font-family: Arial, sans-serif;
+                    background-color: #f2f2f2;
+                    margin: 0;
+                    padding: 0;
+                }
+
+                .container {
+                    max-width: 100%;
+                    margin: 0 auto;
+                    padding: 20px;
+                }
+
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                    background-color: #fff;
+                    border-radius: 10px;
+                    overflow: hidden;
+                    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                }
+
+                th, td {
+                    padding: 12px 15px;
+                    text-align: left;
+                }
+
+                th {
+                    background-color: #007bff;
+                    color: #fff;
+                    border-top-left-radius: 10px;
+                    border-top-right-radius: 10px;
+                }
+
+                tr:nth-child(even) {
+                    background-color: #f2f2f2;
+                }
+
+                tr:hover {
+                    background-color: #ddd;
+                }
+
+                th, td {
+                    border-bottom: 1px solid #ddd;
+                }
+
+                th:last-child, td:last-child {
+                    border-bottom: none;
+                }
+    </style>
+    
+</head>
+<body>
+    <header class="header">
+            <button> <a href="category.html" class="custom-button">Back</a></button>
+        </header>
+    <div class="container">
+        <h1>List of Recent Civil Cases</h1>
+
+        <div class="container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Case Name</th>
+                            <th>Date of Hearing</th>
+                            <th>Result</th>
+                            <th>Sentence</th>
+                            <th>Action</th> <!-- New column for delete button -->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                                <td>Case 1: Smith v. Johnson</td>
+                                <td>2023-09-10</td>
+                                <td>Settled</td>
+                                <td>-</td>
+                                <td><button class="delete-button">Delete</button></td> <!-- Delete button -->
+                            </tr>
+                        <tr>
+                                                        <td>Case 2: Davis v. Martinez</td>
+                                                        <td>2023-08-05</td>
+                                                        <td>Ruling in favor of Davis</td>
+                                                        <td>-</td>
+                                                        <td><button class="delete-button">Delete</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Case 3: Turner v. Robinson</td>
+                                                        <td>2023-07-20</td>
+                                                        <td>Settled</td>
+                                                        <td>-</td>
+                                                        <td><button class="delete-button">Delete</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Case 4: Wilson v. Clark</td>
+                                                        <td>2023-06-15</td>
+                                                        <td>Ruling in favor of Wilson</td>
+                                                        <td>-</td>
+                                                        <td><button class="delete-button">Delete</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Case 5: Adams v. Green</td>
+                                                        <td>2023-05-02</td>
+                                                        <td>Settled</td>
+                                                        <td>-</td>
+                                                        <td><button class="delete-button">Delete</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Case 6: Brown v. Turner</td>
+                                                        <td>2023-04-18</td>
+                                                        <td>Ruling in favor of Turner</td>
+                                                        <td>-</td>
+                                                        <td><button class="delete-button">Delete</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Case 7: Harris v. King</td>
+                                                        <td>2023-03-27</td>
+                                                        <td>Settled</td>
+                                                        <td>-</td>
+                                                        <td><button class="delete-button">Delete</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Case 8: Roberts v. Martin</td>
+                                                        <td>2023-02-14</td>
+                                                        <td>Ruling in favor of Martin</td>
+                                                        <td>-</td>
+                                                        <td><button class="delete-button">Delete</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Case 9: Lee v. Jackson</td>
+                                                        <td>2023-01-30</td>
+                                                        <td>Settled</td>
+                                                        <td>-</td>
+                                                        <td><button class="delete-button">Delete</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Case 10: Green v. Adams</td>
+                                                        <td>2023-01-05</td>
+                                                        <td>Ruling in favor of Adams</td>
+                                                        <td>-</td>
+                                                        <td><button class="delete-button">Delete</button></td>
+                                                    </tr>
+                                                    <tr>
+                                                            <td>Case 11: Patel v. Lee</td>
+                                                            <td>2023-09-18</td>
+                                                            <td>Settled</td>
+                                                            <td>-</td>
+                                                            <td><button class="delete-button">Delete</button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Case 12: Miller v. Turner</td>
+                                                            <td>2023-10-03</td>
+                                                            <td>Ruling in favor of Turner</td>
+                                                            <td>-</td>
+                                                            <td><button class="delete-button">Delete</button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Case 13: Robinson v. Davis</td>
+                                                            <td>2023-11-22</td>
+                                                            <td>Settled</td>
+                                                            <td>-</td>
+                                                            <td><button class="delete-button">Delete</button></td>
+                                                    
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Case 14: Harris v. Roberts</td>
+                                                            <td>2023-12-15</td>
+                                                            <td>Ruling in favor of Roberts</td>
+                                                            <td>-</td>
+                                                            <td><button class="delete-button">Delete</button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Case 15: Garcia v. White</td>
+                                                            <td>2023-08-30</td>
+                                                            <td>Settled</td>
+                                                            <td>-</td>
+                                                            <td><button class="delete-button">Delete</button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Case 16: Clark v. Brown</td>
+                                                            <td>2023-07-25</td>
+                                                            <td>Ruling in favor of Brown</td>
+                                                            <td>-</td>
+                                                            <td><button class="delete-button">Delete</button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Case 17: Martin v. King</td>
+                                                            <td>2023-06-14</td>
+                                                            <td>Settled</td>
+                                                            <td>-</td>
+                                                            <td><button class="delete-button">Delete</button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Case 18: Jackson v. Adams</td>
+                                                            <td>2023-04-09</td>
+                                                            <td>Ruling in favor of Adams</td>
+                                                            <td>-</td>
+                                                            <td><button class="delete-button">Delete</button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Case 19: Wilson v. Green</td>
+                                                            <td>2023-02-27</td>
+                                                            <td>Settled</td>
+                                                            <td>-</td>
+                                                            <td><button class="delete-button">Delete</button></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>Case 20: Turner v. Harris</td>
+                                                            <td>2023-01-10</td>
+                                                            <td>Ruling in favor of Turner</td>
+                                                            <td>-</td>
+                                                            <td><button class="delete-button">Delete</button></td>
+                                                        </tr>
+                                                        
+                    </tbody>
+                </table>
+                <a href="addcivil.html" class="custom-button">Add New Case</a>
+            </div>
+        <script>
+                    document.addEventListener("DOMContentLoaded", function () {
+                        const caseTableBody = document.querySelector("tbody");
+
+                        // Function to handle row deletion
+                        function deleteRow(button) {
+                            const row = button.closest("tr");
+                            row.remove();
+                        }
+
+                        // Attach click event listeners to delete buttons
+                        const deleteButtons = document.querySelectorAll(".delete-button");
+                        deleteButtons.forEach(function(button) {
+                            button.addEventListener("click", function() {
+                                deleteRow(button);
+                            });
+                        });
+                    });
+                </script>
+
+</body>
+</html>
